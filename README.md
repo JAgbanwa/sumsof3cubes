@@ -1,8 +1,8 @@
 # Integer-solution search for
 
-\[
-y^2 = \frac{36}{m}x^3 + 36x^2 + 12mx + \frac{m^3-19}{m},\quad m\neq 0
-\]
+
+$y^2 = \frac{36}{m}x^3 + 36x^2 + 12mx + \frac{m^3-19}{m},\quad m\neq 0$
+
 
 This repository contains Charity-Engine-friendly search code.
 
