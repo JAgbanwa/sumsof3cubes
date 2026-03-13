@@ -1,0 +1,21 @@
+<input_template>
+  <file_info>
+    <number>0</number>
+  </file_info>
+  <workunit>
+    <file_ref>
+      <file_number>0</file_number>
+      <open_name>wu.txt</open_name>
+    </file_ref>
+    <rsc_fpops_est>1.2e13</rsc_fpops_est>
+    <rsc_fpops_bound>2.4e14</rsc_fpops_bound>
+    <rsc_memory_bound>67108864</rsc_memory_bound>
+    <rsc_disk_bound>52428800</rsc_disk_bound>
+    <delay_bound>604800</delay_bound>
+    <min_quorum>2</min_quorum>
+    <target_nresults>2</target_nresults>
+    <max_error_results>5</max_error_results>
+    <max_total_results>10</max_total_results>
+    <max_success_results>5</max_success_results>
+  </workunit>
+</input_template>
