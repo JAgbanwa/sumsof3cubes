@@ -1,0 +1,23 @@
+version: "3.9"
+
+# docker-compose.yml – spin up worker replicas on any machine
+#
+# Usage:
+#   SERVER=http://HOST:5555 KEY=volunteer_key_change_me \
+#   docker-compose up --scale worker=8
+#
+# Each replica runs one Sage process.  Set 'replicas' to cpu_count.
+
+services:
+  worker:
+    build: .
+    image: cubes-worker
+    deploy:
+      replicas: 4
+    environment:
+      - SERVER=${SERVER:-http://localhost:5555}
+      - KEY=${KEY:-volunteer_key_change_me}
+      - WORKERS=1          # 1 Sage process per container (use replicas for parallelism)
+      - WORKER_ID=${HOSTNAME:-volunteer}
+    restart: unless-stopped
+    mem_limit: 4g           # Sage can be memory-hungry for large ranks
