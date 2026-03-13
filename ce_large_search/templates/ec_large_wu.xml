@@ -1,0 +1,29 @@
+<!--
+  BOINC work-unit template  —  ec_large search
+  File:  templates/ec_large_wu.xml
+  Place in: $BOINC_PROJECT_DIR/templates/ec_large_wu.xml
+-->
+<file_info>
+    <number>0</number>
+</file_info>
+<workunit>
+    <file_ref>
+        <file_number>0</file_number>
+        <open_name>wu.txt</open_name>
+        <copy_file/>
+    </file_ref>
+    <command_line>wu.txt result.txt checkpoint.json</command_line>
+    <!-- 14-day deadline -->
+    <delay_bound>1209600</delay_bound>
+    <!-- Minimum quorum: 2 matching results required -->
+    <min_quorum>2</min_quorum>
+    <target_nresults>2</target_nresults>
+    <max_error_results>5</max_error_results>
+    <max_total_results>10</max_total_results>
+    <max_success_results>6</max_success_results>
+    <!-- Resource estimates (adjust per profiling) -->
+    <rsc_fpops_est>1e15</rsc_fpops_est>
+    <rsc_fpops_bound>1e17</rsc_fpops_bound>
+    <rsc_memory_bound>536870912</rsc_memory_bound>
+    <rsc_disk_bound>67108864</rsc_disk_bound>
+</workunit>

@@ -1,0 +1,22 @@
+Testing n in [-100, 100] \ {0} ...
+Traceback (most recent call last):
+  File "/private/var/tmp/sage-10.5-current/local/var/lib/sage/venv-python3.12.5/lib/python3.12/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py", line 6121, in integral_points
+    mw_base = self.gens()
+              ^^^^^^^^^^^
+  File "/private/var/tmp/sage-10.5-current/local/var/lib/sage/venv-python3.12.5/lib/python3.12/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py", line 2353, in gens
+    gens, proved = self._compute_gens(proof, **kwds)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/tmp/sage-10.5-current/local/var/lib/sage/venv-python3.12.5/lib/python3.12/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py", line 2495, in _compute_gens
+    raise RuntimeError("Unable to compute the rank, hence generators, with certainty (lower bound=%s, generators found=%s).  This could be because Sha(E/Q)[2] is nontrivial." % (C.rank(), G) +
+RuntimeError: Unable to compute the rank, hence generators, with certainty (lower bound=0, generators found=[]).  This could be because Sha(E/Q)[2] is nontrivial.
+Try increasing descent_second_limit then trying this command again.
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/tmp/sage_test.py", line 16, in <module>
+    pts = E.integral_points(both_signs=True)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/private/var/tmp/sage-10.5-current/local/var/lib/sage/venv-python3.12.5/lib/python3.12/site-packages/sage/schemes/elliptic_curves/ell_rational_field.py", line 6123, in integral_points
+    raise RuntimeError("Unable to compute Mordell-Weil basis of {}, hence unable to compute integral points.".format(self))
+RuntimeError: Unable to compute Mordell-Weil basis of Elliptic Curve defined by y^2 = x^3 + 1296*x^2 + 15552*x + 46637 over Rational Field, hence unable to compute integral points.

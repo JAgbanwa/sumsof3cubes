@@ -1,0 +1,26 @@
+<file_info>
+    <name><OUTFILE_0/></name>
+    <generated_locally/>
+    <upload_when_present/>
+    <max_nbytes>5242880</max_nbytes>
+    <url><UPLOAD_URL/></url>
+</file_info>
+<workunit>
+    <file_ref>
+        <file_name><INFILE_0/></file_name>
+        <open_name>wu.txt</open_name>
+        <copy_file/>
+    </file_ref>
+    <command_line/>
+    <credit>100</credit>
+    <rsc_fpops_est>1e14</rsc_fpops_est>
+    <rsc_fpops_bound>1e16</rsc_fpops_bound>
+    <rsc_memory_bound>5e8</rsc_memory_bound>
+    <rsc_disk_bound>1e8</rsc_disk_bound>
+    <delay_bound>604800</delay_bound>
+    <min_quorum>2</min_quorum>
+    <target_nresults>2</target_nresults>
+    <max_error_results>5</max_error_results>
+    <max_total_results>10</max_total_results>
+    <max_success_results>6</max_success_results>
+</workunit>

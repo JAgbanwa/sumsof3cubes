@@ -1,0 +1,8 @@
+==================================================================
+  SAGE INTEGRAL-POINT SEARCH  (algebraically complete)
+  y^2 = x^3 + 1296n^2x^2 + 15552n^3x + (46656n^4 - 19n)
+==================================================================
+  Resuming from radius 1
+  [TIMEOUT n=3] skipped after 120s
+  [TIMEOUT n=-3] skipped after 120s
+  [TIMEOUT n=4] skipped after 120s

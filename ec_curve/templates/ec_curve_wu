@@ -1,0 +1,18 @@
+<workunit>
+  <file_info>
+    <number>0</number>
+  </file_info>
+  <workunit>
+    <file_ref>
+      <file_number>0</file_number>
+      <open_name>wu.txt</open_name>
+      <copy_file/>
+    </file_ref>
+    <command_line>wu.txt result.txt checkpoint.txt</command_line>
+    <rsc_fpops_est>1e14</rsc_fpops_est>
+    <rsc_fpops_bound>1e16</rsc_fpops_bound>
+    <rsc_memory_bound>5e8</rsc_memory_bound>
+    <rsc_disk_bound>1e8</rsc_disk_bound>
+    <delay_bound>604800</delay_bound>
+  </workunit>
+</workunit>
