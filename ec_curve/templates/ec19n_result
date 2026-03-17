@@ -1,0 +1,15 @@
+<output_template>
+  <file_info>
+    <name><OUTFILE_0/></name>
+    <generated_locally/>
+    <upload_when_present/>
+    <max_nbytes>52428800</max_nbytes>
+    <url><UPLOAD_URL/></url>
+  </file_info>
+  <result>
+    <file_ref>
+      <file_number>0</file_number>
+      <open_name>result.txt</open_name>
+    </file_ref>
+  </result>
+</output_template>

@@ -1,0 +1,4 @@
+# PARI/GP complete search — started 2026-03-14 01:15:13
+# n  x  y
+# elapsed 5.1 min  |  timed_out=[128]
+# TOTAL SOLUTIONS: 0
