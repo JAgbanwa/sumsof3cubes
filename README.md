@@ -75,3 +75,59 @@ then $D = U/10^{45}$, $y_\text{user} = W/10^{45}$. Both the intermediate and ori
 **All rational points** on this curve are $\{n \cdot P \mid n \in \mathbb{Z}\} \cup \{\infty\}$.
 
 Full derivation and SageMath code: [`ec_curve/output/m19_rational_points.md`](ec_curve/output/m19_rational_points.md)
+
+### Integral points on $E_m$
+
+Using Baker's method (Sage `integral_points(mw_base=[P])`), passing the MW generator explicitly:
+
+```python
+Em.integral_points(mw_base=[P], both_signs=True)  # => []
+```
+
+**$E_m$ has zero integral points.** This proves $m = 19$ yields no integer solutions $(x, y)$ to the original equation.
+
+---
+
+## Global Integer-Solution Scan
+
+The equation $my^2 = 36x^3 + 36mx^2 + 12m^2x + m^3 - 19$ was scanned systematically for integer solutions. The necessary condition $m \mid (36x^3 - 19)$ filters candidates before testing.
+
+| Range | Search depth | Result |
+|---|---|---|
+| $m \in [-200, 200]$ | $|x| \leq 10^5$ | **No solutions** |
+| $m \in [1, 1000]$ | $|x| \leq 10^6$ | **No solutions** |
+| $m \in [-1000, -1]$ | $|x| \leq 10^6$ | **No solutions** |
+| Sage `integral_points()` on rank-0 curves, $m \in [-50, 50]$ | Baker-method complete | **No solutions** |
+
+The polynomial $36x^3 + 36mx^2 + 12m^2x + m^3$ is **irreducible over $\mathbb{Z}[x,m]$** (Sage confirmed). The absence of solutions appears to be a deep arithmetic property of the constant $-19$.
+
+Scripts: [`ec_curve/pullback.py`](ec_curve/pullback.py) · [`ec_curve/m_scan.py`](ec_curve/m_scan.py)
+
+### Integral points on $E_m$
+
+Using Baker's method (Sage `integral_points(mw_base=[P])`), passing the MW generator explicitly:
+
+```python
+Em.integral_points(mw_base=[P], both_signs=True)  # => []
+```
+
+**$E_m$ has zero integral points.** This proves $m = 19$ yields no integer solutions $(x, y)$ to the original equation.
+
+---
+
+## Global Integer-Solution Scan
+
+The equation $my^2 = 36x^3 + 36mx^2 + 12m^2x + m^3 - 19$ was scanned systematically for integer solutions. The necessary condition $m \mid (36x^3 - 19)$ filters candidates before testing.
+
+| Range | Search depth | Result |
+|---|---|---|
+| $m \in [-200, 200]$ | $|x| \leq 10^5$ | **No solutions** |
+| $m \in [1, 1000]$ | $|x| \leq 10^6$ | **No solutions** |
+| $m \in [-1000, -1]$ | $|x| \leq 10^6$ | **No solutions** |
+| Sage `integral_points()` on rank-0 curves, $m \in [-50, 50]$ | Baker-method complete | **No solutions** |
+
+The polynomial $36x^3 + 36mx^2 + 12m^2x + m^3$ is **irreducible over $\mathbb{Z}[x,m]$** (Sage confirmed). The absence of solutions appears to be a deep arithmetic property of the constant $-19$.
+
+Scripts: [`ec_curve/pullback.py`](ec_curve/pullback.py) · [`ec_curve/m_scan.py`](ec_curve/m_scan.py)
+
+```
