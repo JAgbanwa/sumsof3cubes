@@ -1,0 +1,4 @@
+# Solutions to y² = X³ + a4(n)·X + a6(n),  X ≠ -3888·n²
+#
+# Format: n  X  y
+# (empty — no solutions found yet)

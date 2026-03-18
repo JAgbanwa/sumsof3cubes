@@ -1,0 +1,5 @@
+worker_ec
+output/solutions_bruteforce.txt
+output/solutions_pari.txt
+__pycache__/
+*.pyc
