@@ -33,6 +33,7 @@ The curve degenerates ($\Delta = 0$, $y^2 = X^3$) — skip.
 
 The sister family (`ec_curve/`) uses the **general** Weierstrass form
 $y^2 = X^3 + \left(-\frac{1}{3} \cdot m^4 + \frac{1}{3} \cdot m^3\right) \cdot X + \dfrac{72m^6 - 108m^5 + 27m^4 - 513m}{972}$.
+
 The present family is structurally distinct: it has **no $x^2$ term** (short Weierstrass)
 and $a_4, a_6$ grow as $n^4$ and $n^6$ respectively, vs $n^2, n^4$ there.
 
