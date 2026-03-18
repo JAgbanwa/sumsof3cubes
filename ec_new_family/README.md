@@ -5,7 +5,7 @@
 This folder searches for **integral points** $(X, y) \in \mathbb{Z}^2$ on the short-Weierstrass
 elliptic curve parameterised by $n \in \mathbb{Z} \setminus \{0\}$:
 
-$$E_n : y^2 = X^3 + a_4(n) \cdotX + a_6(n)$$
+$$E_n : y^2 = X^3 + a_4(n) \cdot X + a_6(n)$$
 
 where
 
