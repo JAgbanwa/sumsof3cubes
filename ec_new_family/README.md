@@ -13,11 +13,11 @@ $$a_4(n) = -45349632 n^4 + 419904 n^3$$
 
 $$a_6(n) = 3\cdot \left(39182082048 n^6 - 544195584 n^5 + 1259712 n^4 - 19 n\right)$$
 
-with the **excluded point** $X = -3888\,n^2$ (a special trivial locus).
+with the **excluded point** $X = -3888 \cdot n^2$ (a special trivial locus).
 
 ### Factored form of the coefficients
 
-$$a_4(n) = -419904 n^3\,(108n - 1)$$
+$$a_4(n) = -419904 n^3 (108n - 1)$$
 
 $$a_6(n) = 3n\cdot\left(39182082048\, n^5 - 544195584\, n^4 + 1259712\, n^3 - 19\right)$$
 
