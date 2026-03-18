@@ -1,0 +1,22 @@
+<file_info>
+    <name>ec_nf_wu</name>
+    <generated_locally>0</generated_locally>
+    <upload_when_present>0</upload_when_present>
+</file_info>
+<workunit>
+    <file_ref>
+        <file_name><INFILE0/></file_name>
+        <open_name>wu.txt</open_name>
+        <copy_file/>
+    </file_ref>
+    <command_line>wu.txt result.txt checkpoint.txt</command_line>
+    <target_nresults>2</target_nresults>
+    <min_quorum>2</min_quorum>
+    <max_error_results>5</max_error_results>
+    <max_total_results>10</max_total_results>
+    <max_success_results>5</max_success_results>
+    <rsc_fpops_est>1.4e+13</rsc_fpops_est>
+    <rsc_fpops_bound>7.0e+14</rsc_fpops_bound>
+    <rsc_memory_bound>67108864</rsc_memory_bound>
+    <rsc_disk_bound>1048576</rsc_disk_bound>
+</workunit>
