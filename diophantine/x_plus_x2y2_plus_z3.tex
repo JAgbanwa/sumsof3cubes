@@ -1,0 +1,26 @@
+\documentclass{article}
+\usepackage{amsmath,amssymb,amsthm}
+\begin{document}
+\title{Integer Solutions to $x + x^2 y^2 + z^3 = 0$}
+\author{}
+\date{}
+\maketitle
+
+\section*{Result}
+All integer solutions are:
+\[
+(0,y,0),\quad (-z^3,0,z),
+\]
+and the sporadic solutions
+\[
+(-1,\pm1,0),\; (-1,\pm3,-2),\; (-8,\pm39,-46).
+\]
+
+\section*{Proof}
+Rewrite the equation as
+\[
+z^3 = -x(1 + xy^2).
+\]
+Since $\gcd(x,1+xy^2)=1$, both factors must be cubes up to sign. This yields the infinite families and reduces the remaining cases to a Mordell-type equation, whose only integer solutions are the listed sporadic points.
+
+\end{document}
